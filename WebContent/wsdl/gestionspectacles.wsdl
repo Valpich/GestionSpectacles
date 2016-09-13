@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="GestionSpectaclesService" targetNamespace="http://webservices.spectacle.javaee/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://webservices.spectacle.javaee/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://webservices.spectacle.javaee/" schemaLocation="gestionspectacles_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="annulerSpectacleResponse">
+    <wsdl:part name="parameters" element="tns:annulerSpectacleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="trouverSpectacle">
+    <wsdl:part name="parameters" element="tns:trouverSpectacle">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="payerSpectacle">
+    <wsdl:part name="parameters" element="tns:payerSpectacle">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="reserverSpectacleResponse">
+    <wsdl:part name="parameters" element="tns:reserverSpectacleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="trouverSpectacleResponse">
+    <wsdl:part name="parameters" element="tns:trouverSpectacleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="reserverSpectacle">
+    <wsdl:part name="parameters" element="tns:reserverSpectacle">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="payerSpectacleResponse">
+    <wsdl:part name="parameters" element="tns:payerSpectacleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="annulerSpectacle">
+    <wsdl:part name="parameters" element="tns:annulerSpectacle">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="recupererReservation">
+    <wsdl:part name="parameters" element="tns:recupererReservation">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="recupererReservationResponse">
+    <wsdl:part name="parameters" element="tns:recupererReservationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="WSGestionSpectacles">
+    <wsdl:operation name="reserverSpectacle">
+      <wsdl:input name="reserverSpectacle" message="tns:reserverSpectacle">
+    </wsdl:input>
+      <wsdl:output name="reserverSpectacleResponse" message="tns:reserverSpectacleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recupererReservation">
+      <wsdl:input name="recupererReservation" message="tns:recupererReservation">
+    </wsdl:input>
+      <wsdl:output name="recupererReservationResponse" message="tns:recupererReservationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="payerSpectacle">
+      <wsdl:input name="payerSpectacle" message="tns:payerSpectacle">
+    </wsdl:input>
+      <wsdl:output name="payerSpectacleResponse" message="tns:payerSpectacleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trouverSpectacle">
+      <wsdl:input name="trouverSpectacle" message="tns:trouverSpectacle">
+    </wsdl:input>
+      <wsdl:output name="trouverSpectacleResponse" message="tns:trouverSpectacleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="annulerSpectacle">
+      <wsdl:input name="annulerSpectacle" message="tns:annulerSpectacle">
+    </wsdl:input>
+      <wsdl:output name="annulerSpectacleResponse" message="tns:annulerSpectacleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GestionSpectaclesServiceSoapBinding" type="tns:WSGestionSpectacles">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="reserverSpectacle">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="reserverSpectacle">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="reserverSpectacleResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recupererReservation">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="recupererReservation">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="recupererReservationResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="payerSpectacle">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="payerSpectacle">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="payerSpectacleResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="annulerSpectacle">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="annulerSpectacle">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="annulerSpectacleResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trouverSpectacle">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="trouverSpectacle">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="trouverSpectacleResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GestionSpectaclesService">
+    <wsdl:port name="GestionSpectaclesPort" binding="tns:GestionSpectaclesServiceSoapBinding">
+      <soap:address location="http://localhost:8080/GestionSpectacles/services/GestionSpectaclesPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
